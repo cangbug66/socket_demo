@@ -8,7 +8,7 @@
 //创建tcp socket
 $socket = socket_create(AF_INET,SOCK_STREAM,SOL_TCP);
 
-$host="0.0.0.0";
+$host="127.0.0.1";
 $port=6666;
 //绑定ip和端口
  socket_bind($socket,$host,$port);
@@ -32,10 +32,7 @@ for ($i=1;$i<=$num;$i++){
         }
     }
 }
-//主进程阻塞
-while (true){
-    sleep(1);
-}
-
+//回收子进程
+pcntl_wait($status);
 
 socket_close($socket);
