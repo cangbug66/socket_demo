@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 2018/4/3
- * Time: 16:55
- */
 
 $host = "127.0.0.5";
 $port = 6666;

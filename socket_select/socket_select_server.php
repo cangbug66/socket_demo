@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Admin
- * Date: 2018/4/3
- * Time: 16:47
- */
+
 //创建tcp socket
 
 $server_socket = socket_create(AF_INET,SOCK_STREAM,SOL_TCP);

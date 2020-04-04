@@ -6,7 +6,7 @@
  * Time: 16:55
  */
 
-$host = "127.0.0.1";
+$host = "127.0.0.7";
 $port = 6666;
 
     $fp=stream_socket_client(sprintf("tcp://%s:%s",$host,$port), $errno, $errstr);
@@ -19,5 +19,5 @@ $port = 6666;
         $response = fread($fp, 1024);
         echo "收到消息：" . $response."\n";
     }
-    fclose($fp);
+//    fclose($fp);
 
